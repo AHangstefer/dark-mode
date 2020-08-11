@@ -19,7 +19,7 @@ const App = () => {
       .catch(err => console.log(err));
   }, []);
   return (
-    <div className={darkmode ? "dark-mode App" : "App"}>
+    <div className={'' ? "dark-mode App" : "App"}>
       <Navbar />
       <Charts coinData={coinData} />
     </div>
@@ -28,3 +28,6 @@ const App = () => {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+
+
+{/* <div className={darkmode ? "dark-mode App" : "App"}> */}
