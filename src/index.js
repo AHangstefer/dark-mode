@@ -4,6 +4,7 @@ import axios from "axios";
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
+//import useDarkMode from "./hooks/useDarkMode"
 
 import "./styles.scss";
 
@@ -19,7 +20,8 @@ const App = () => {
       .catch(err => console.log(err));
   }, []);
   return (
-    <div className={'' ? "dark-mode App" : "App"}>
+    // <div className={ darkMode ? "dark-mode App" : "App"}>
+    <div>
       <Navbar />
       <Charts coinData={coinData} />
     </div>
